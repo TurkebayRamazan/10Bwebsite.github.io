@@ -14,6 +14,10 @@ body{
   background: linear-gradient(180deg, #12009e 42%, #ffffff 100%);
 }
 
+p {
+  color: aquamarine;
+}
+
 
 .bgvideo {
   position: relative;
