@@ -1,132 +1,77 @@
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Edu Australia VIC WA NT Hand Precursive');
-
-/* body {
-  background-image: url(../../../../Downloads/f8a70144eb881afe78df0164e657e966.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-} */
-
-body{
-  background: linear-gradient(180deg, #12009e 42%, #ffffff 100%);
-}
-
-p {
-  color: white;
-}
-
-
-.bgvideo {
-  position: relative;
-  width: 100%;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.bgvideo video {
-  width: 100%;
-  height: 50vh;
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-
-.effect{
-  width: 100%;
-  height: 50vh;
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.274);
-}
-
-
-.video-text {
-  color: aquamarine;
-  z-index: 2;
-}
-
-
-
-
-
-
-
-p {
-  color: aquamarine;
-}
-
 
 body {
   font-family: Edu Australia VIC WA NT Hand Precursive, serif;
+  margin: 0; 
+  padding: 0;  
+  background-color: #000; 
 }
 
-.collapse .navbar-collapse.nav-link.active{
-  color: white;
-}
-.nav-link {
-    color: yellow;
-}
-
-
-.navbar-brand img {
-  width: 50px;
-  padding-left: 0;
-}
-.navbar-toggler {
-    background-color: rgb(146, 146, 146);;
-}
-.card {
+.bgvideo {
+  position: fixed;  
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100vh;
+  z-index: -1;
 }
-.card>img {
+
+.bgvideo video {
   width: 100%;
+  height: 100vh; 
+  object-fit: cover; 
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.card {
-  background: none;
-  border-color: yellow;
-  color: yellow;
+
+.effect {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; 
+  background-color: rgba(0, 0, 0, 0.5); 
 }
-.btn.btn-primary {
-  background-color: black;
-  color: yellow;
+
+/* .video-text {
+  color: aquamarine;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+} */
+
+p {
+  color: aquamarine;
 }
+
+.navbar, .footer-text, .card, .btn, .media-links, .call-anim {
+  z-index: 2;
+}
+
 .left-text {
-    color: black;
+  color: black;
 }
 .slide-text,
-.footer-text p{
-    color: white;
-    margin: auto auto;
-}
-
-@media (max-width: 700px) {
-    .carousel-indicators {
-        display: none;
-    }
-
+.footer-text p {
+  color: white;
+  margin: auto auto;
 }
 
 footer,
-.btn-outline-primary{
-  background: linear-gradient(180deg, #12009e 42%, #ffffff 100%);
+.btn-outline-primary {
+  background-color: black;
 }
 
 .footer-text>a {
   text-decoration: none;
-  color: black;
+  color: aquamarine;
 }
+
 .footer-text>p {
-  color: black;
+  color: aquamarine;
 }
 
 .media-links {
@@ -138,34 +83,24 @@ footer,
 .call-anim {
   animation: call 2s ease 0s infinite normal forwards;
 }
+
 @keyframes call {
-	0%,
-	100% {
-		transform: translateX(0%);
-		transform-origin: 50% 50%;
-	}
-
-	15% {
-		transform: translateX(-30px) rotate(-6deg);
-	}
-
-	30% {
-		transform: translateX(15px) rotate(6deg);
-	}
-
-	45% {
-		transform: translateX(-15px) rotate(-3.6deg);
-	}
-
-	60% {
-		transform: translateX(9px) rotate(2.4deg);
-	}
-
-	75% {
-		transform: translateX(-6px) rotate(-1.2deg);
-	}
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
 }
-.btn-outline-primary {
-  color: white;
-}
-
